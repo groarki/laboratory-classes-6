@@ -11,20 +11,36 @@ main {
   padding: 2rem;
   text-align: center;
 }
-
+ul {
+  list-style-type: none;
+}
 .heading {
-  color: white;
+  color: #7a3145;
   margin: 0;
   font-size: 2.2rem;
 }
 
 .navigation {
-  background-color: #388e3c;
+  background-color: #7a3145;
   padding: 0.5rem 0;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
+.product-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-size: 16px;
+  width: 116px;
+  height: 32px;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: none;
+  color: white;
+  background-color: #7a3145;
+}
 .navigation__list {
   list-style-type: none;
   margin: 0;
@@ -40,16 +56,18 @@ main {
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .navigation__link:hover {
-  background-color: #2e7d32;
+  background-color: #d4bfc4;
+  color: #7a3145;
 }
 
 .navigation__link--active {
-  background-color: #2e7d32;
+  background-color: #d4bfc4;
+  color: #7a3145;
 }
 
 .navigation__cart {
@@ -123,7 +141,7 @@ main {
 
 .button {
   padding: 0.75rem 1.5rem;
-  background-color: #4caf50;
+  background-color: #7a3145;
   color: white;
   border: none;
   border-radius: 0.3rem;
@@ -134,13 +152,15 @@ main {
 }
 
 .button:hover {
-  background-color: #388e3c;
+  background-color: #d4bfc4;
   transform: translateY(-2px);
+  color: #7a3145;
 }
 
 .button:active {
-  background-color: #2e7d32;
+  background-color: white;
   transform: translateY(0);
+  color: #7a3145;
 }
 
 .card {
@@ -170,6 +190,7 @@ main {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #2c3e50;
+  text-transform: uppercase;
 }
 
 .card__description {
@@ -180,5 +201,20 @@ main {
 .card__price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #4caf50;
+  color: #7a3145;
+}
+.delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-size: 16px;
+  width: 116px;
+  height: 32px;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: none;
+  color: white;
+  background-color: #7a3145;
 }

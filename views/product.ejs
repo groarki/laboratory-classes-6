@@ -11,7 +11,12 @@
       activeLinkPath, cartCount: cartCount }); %>
       <h1 class="heading"><%= product.name %></h1>
       <div><%= product.description %></div>
-      <button onclick="deleteProduct('<%= product.name %>')">Delete</button>
+      <button
+        class="product-detail-btn"
+        onclick="deleteProduct('<%= product.name %>')"
+      >
+        Delete
+      </button>
     </main>
     <script>
       function deleteProduct(name) {

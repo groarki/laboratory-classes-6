@@ -8,7 +8,9 @@
   <p class="card__description"><%= product.description %></p>
   <p class="card__price"><%= product.price %></p>
   <a href="/products/<%= product.name %>">Details</a>
-  <button onclick="deleteProduct('<%= product.name %>')">Delete</button>
+  <button class="delete-btn" onclick="deleteProduct('<%= product.name %>')">
+    Delete
+  </button>
 </div>
 <script>
   function deleteProduct(name) {
